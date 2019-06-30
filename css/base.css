@@ -112,3 +112,30 @@
 	background-color: inherit;
 	text-align: center;
 }
+
+.profile-pic{
+	height: 35vh;
+	min-height: 200px;
+	max-width: 95%;
+	width:auto;
+}
+
+.bio-section{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.bio-title{
+	font-size: x-large;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.bio-description{
+	width: 50vw;
+	min-width: 400px;
+	max-wdith: 95vw;
+	margin: 0 auto;
+}
