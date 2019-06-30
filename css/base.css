@@ -139,3 +139,17 @@
 	max-wdith: 95vw;
 	margin: 0 auto;
 }
+
+.contact-title{
+	font-size: x-large;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.contact-description{
+	width: 50vw;
+	min-width: 400px;
+	max-wdith: 95vw;
+	margin: 0 auto;
+}
