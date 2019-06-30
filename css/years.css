@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.left-title {
+	flaot: left;
+	margin-top:20px;
+	padding-left: 30px;
+	font-weight: 900;
+	font-size: 50px;
+}
+.year{
+	background-color: inherit;
+	font-size: x-large;
+	font-weight: 900;
+	color: inherit;
+}
+.section{
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+}
+.summary{
+	width: 600px;
+	max-width: 90%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+.project-expose{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.project-expose img{
+	height: 50vh;
+	min-height: 200px;
+	max-height: 270px;
+	width: 50vh;
+	max-width: 95%;
+	padding-left: 2px;
+	padding-right: 2px;
+	object-fit: contain;
+}
+
+.iphones{
+	width: 100%;
+	height: 70vh;
+	background-color: #232ED1;
+	text-align: center;
+}
+
+.iphones img{
+	height: 100%;
+	width: auto;
+}
