@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Overpass:400,900&display=swap');
+
+* { /* would work the same with #wrapper */
+	font-family: 'Overpass', sans-serif;
+	background-color: #EEEEEE;
+	margin: 0;
+	padding:0;
+	border-width: 0px 0;
+}
+
+.filler{
+	width: 100%;
+	height: 56px;
+}
+
+.blue-bg{
+	background-color: #232ED1;
+	color: #EEEEEE;
+}
+
+.white-bg{
+	background-color: #EEEEEE;
+	color: #232ED1;
+}
+
+.navmenu{
+    float:right;
+    width:auto;
+    margin:0; padding:0;
+    list-style-type:none;
+}
+.navmenu > li {
+    float:right;
+    display:inline;
+    position:relative;
+    border:0px white solid;
+    background-color: inherit;
+	color: inherit;
+}
+.navmenu > li > a{
+	padding: 20px;
+	width: auto;
+	transition: transform .6s ease-in-out;
+	background-color: inherit;
+	color: inherit;
+}
+
+.navmenu > li:hover > a {
+	transform: rotate(180deg);
+}
+.navmenu > li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s, 0s;
+}
+.navmenu li ul {
+    position:absolute;
+    float:right;
+    width: auto;
+    height:0;
+	right: 0;
+    margin:0;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-duration: .6s, 0s;
+    transition-delay: 0s, .4s;
+	list-style-type:none;
+	text-align: right;
+	background-color: inherit;
+	color: inherit;
+	z-index: 2;
+}
+.navmenu ul li {   
+    background-color: inherit;
+	color: inherit;
+    border:0px black solid;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	white-space: nowrap;
+	font-size: large;
+	transition: font-size 0.2s;
+}
+.navmenu li ul a {
+	 text-decoration: none;
+	 display: block;
+	 width: 100%;
+	 height: 100%;
+}
+.navmenu ul li:hover {
+	font-size: x-large;
+    border:0px white solid;
+    color: inherit;
+	cursor:pointer;
+}
+
+.fade-in{
+	animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.center-text{
+	position: relative;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: inherit;
+	text-align: center;
+}
+
+.profile-pic{
+	height: 35vh;
+	min-height: 200px;
+	max-width: 95%;
+	width:auto;
+}
+
+.bio-section{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.bio-title{
+	font-size: x-large;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.bio-description{
+	width: 50vw;
+	min-width: 400px;
+	max-wdith: 95vw;
+	margin: 0 auto;
+}
+
+.contact-title{
+	font-size: x-large;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.contact-description{
+	width: 50vw;
+	min-width: 400px;
+	max-wdith: 95vw;
+	margin: 0 auto;
+}
+
+.left-title {
+	flaot: left;
+	margin-top:20px;
+	padding-left: 30px;
+	font-weight: 900;
+	font-size: 50px;
+}
+.year-portfolio{
+	background-color: inherit;
+	font-size: x-large;
+	font-weight: normal;
+	color: inherit;
+}
+.section{
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+}
+
+.section ul{
+	margin: 0;
+  	padding: 0;
+}
+
+.section ul li {
+  display: inline-block;
+  color: white;
+}
+
+.project{
+	position: relative;
+	width: 50%;
+	background-color: inherit;
+	color: inherit;
+}
+
+.project img{
+	display: block;
+	height: 50vh;
+	min-height: 200px;
+	max-height: 270px;
+	width: 50vh;
+	padding-left: 2px;
+	padding-right: 2px;
+	object-fit: contain;
+	background-color: inherit;
+	color: inherit;
+}
+
+.project-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50vh;
+	min-height: 200px;
+	max-height: 270px;
+	width: 50vh;  opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.project:hover .project-overlay {
+  opacity: 0.6;
+}
+
+.project-name {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: inherit;
+	color: white;
+}
+
+.year{
+	background-color: inherit;
+	font-size: x-large;
+	font-weight: 900;
+	color: inherit;
+}
+
+.summary{ 
+	width: 600px;
+	max-width: 90%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.project-expose{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.project-expose img{
+	height: 50vh;
+	min-height: 200px;
+	max-height: 270px;
+	width: 50vh;
+	max-width: 95%;
+	padding-left: 2px;
+	padding-right: 2px;
+	object-fit: contain;
+}
+
+.iphones{
+	width: 100%;
+	height: 70vh;
+	background-color: #232ED1;
+	text-align: center;
+}
+
+.iphones img{
+	height: 100%;
+	width: auto;
+}
+
+.cover{
+	height: 85vh;
+	width: 100%;
+	text-align: center;
+}
+
+.small-cover{
+	height: 15vh;
+	width: 100%;
+	text-align: center;
+	font-size: x-large;
+}
+
+.title{
+	background-color: inherit;
+	font-weight: 900;
+	font-size: 50px;
+}
+
+.subtitle{
+	background-color: inherit;
+	font-size: medium;
+	font-weight: normal;
+}
+
+.photo-section{
+	display: inline-block;
+	text-align: center;
+}
+	
+.photo-section img{
+	height: 39vh;
+	min-height: 200px;
+	max-height: 270px;
+	width: auto;
+	max-width: 95%;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.menu-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: inherit;
+	color: inherit;
+	display: inline-block;
+	text-align: initial;
+}
+
+.menu-list li {
+	float: left;
+	background-color: inherit;
+	color: inherit;
+	transition: font-size 0.2s;
+}
+
+.menu-list li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+	background-color: inherit;
+	color: inherit;
+}
+
+.menu-list li a:hover {
+	background-color: #1721B6;
+	cursor:pointer;
+}
+
+.menu-list li a div {
+	background-color: inherit;
+	color: inherit
+}
+
+
+.menu-list li a div i {
+	background-color: inherit;
+	color: inherit;
+	width: 15vw;
+	height: auto;
+}
+
+.menu-list li a div p {
+	background-color: inherit;
+	color: inherit;
+	width: 15vw;
+	height: auto;
+}
+
+.know-more{
+	text-align: center;
+	background-color: inherit;
+	color: inherit
+}
+
+.know-more p{
+	font-size: large;
+	background-color: inherit;
+	color: inherit
+}
+
+.pad-top{
+	padding-top: 10px;
+}
+
+.menu-item-icon{
+	display: block;
+}
+
+
+
+
+

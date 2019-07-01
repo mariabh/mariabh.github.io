@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>MB - Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="../css/base.css">
-		<link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 	</head>
 	<div id="wrapper">
@@ -13,10 +12,10 @@
 				<li>
 					<a class="fas fa-bars"></a>
 					<ul>
-						<li onclick="window.location.href='front.html'">Home</li>
+						<li onclick="window.location.href='index.html'">Home</li>
 						<li onClick="window.location.href='portfolio.html'">Portfolio</li>
 						<li onClick="window.location.href='bio.html'">Bio</li>
-						<li>Contact</li>
+						<li onClick="window.location.href='contact.html'">Contact</li>
 					</ul>        
 				</li>
 			</ul>
@@ -25,42 +24,120 @@
 		<div class="fade-in" style="display: block">
 			<div class="section white-bg">
 				<div>
-					<div class="year">First Year</div>
-					<div>2016-2017</div>
+					<div class="year-portfolio">First Year</div>
+					<div style="padding-bottom: 5px">2016-2017</div>
 				</div>
-				<div class="project-expose">
-					<a><img src="../img/portfolio/1st/st.jpg" alt="macaroons"></a>
+				<ul>
+					<li>
+						<a>
+							<div class="project">
+								<img src="../img/portfolio/1st/st.jpg" alt="macarons">
+								<div class="project-overlay">
+									<div class="project-name">The Secret of Macarons</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="first-year.html">
+							<div class="project">
+								<img src="../img/portfolio/1st/mymilano.jpg" alt="My Milano">
+								<div class="project-overlay">
+									<div class="project-name">My Milano</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a>
+							<div class="project">
+								<img src="../img/portfolio/1st/cupcakelogo.png" alt="branding">
+								<div class="project-overlay">
+									<div class="project-name">Milano Sweets</div>
+								</div>
+							</div>
 
-					<a href="first-year.html">
-							<img src="../img/portfolio/1st/mymilano.jpg" alt="mymilano">
-					</a>
-					<a>
-						<img src="../img/portfolio/1st/cupcakelogo.png" alt="cupcake">
-					</a>
-
-				</div>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div class="section blue-bg">
 				<div class="blue-bg">
-					<div class="year">Second Year</div>
-					<div class="blue-bg">2016-2017</div>
+					<div class="year-portfolio">Second Year</div>
+					<div style="padding-bottom: 5px" class="blue-bg">2017-2018</div>
 				</div>
-				<div class="project-expose blue-bg">
-					<img  class="blue-bg" src="../img/portfolio/2nd/batterycorrect.png" alt="batteryorange">	
-					<a href="second-year.html"><img class="blue-bg" src="../img/portfolio/2nd/smoochcorrect.png" alt="lipbalm"></a>
-					<img class="blue-bg" src="../img/portfolio/2nd/fashionworld.PNG" alt="magazine">	
-				</div>
+				<ul class="blue-bg">
+					<li>
+						<a class="blue-bg">
+							<div class="project">
+								<img src="../img/portfolio/2nd/batterycorrect.png" alt="batterybuddy">
+								<div class="project-overlay">
+									<div class="project-name">Battery Buddy</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a  class="blue-bg" href="second-year.html">
+							<div class="project">
+								<img src="../img/portfolio/2nd/smoochcorrect.png" alt="lipbalms">
+								<div class="project-overlay">
+									<div class="project-name">Smooch</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a class="blue-bg">
+							<div class="project">
+								<img src="../img/portfolio/2nd/fashionworld.PNG" alt="fashion">
+								<div class="project-overlay">
+									<div class="project-name">The Fashion World</div>
+								</div>
+							</div>
+
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div class="section white-bg">
 				<div>
-					<div class="year">Third Year</div>
-					<div>2016-2017</div>
+					<div class="year-portfolio">Third Year</div>
+					<div style="padding-bottom: 5px">2018-2019</div>
 				</div>
-				<div class="project-expose">
-					<img src="../img/portfolio/3rd/HarmonyMariaBarahona_Page_12.png" alt="tea">
-					<a href="third-year.html"><img src="../img/portfolio//3rd/tribò icon2.png" alt="intern"></a>
-					<img src="../img/portfolio/3rd/D1-box-inside.jpg" alt="watch">
-				</div>
+				<ul>
+					<li>
+						<a>
+							<div class="project">
+								<img src="../img/portfolio/3rd/HarmonyMariaBarahona_Page_12.png" alt="tea">
+								<div class="project-overlay">
+									<div class="project-name">San Benedetto</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="third-year.html">
+							<div class="project">
+								<img src="../img/portfolio/3rd/tribò icon2.png" alt="tribo-logo">
+								<div class="project-overlay">
+									<div class="project-name">Tribo/Sharewood</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a>
+							<div class="project">
+								<img src="../img/portfolio/3rd/D1-box-inside.jpg" alt="watch">
+								<div class="project-overlay">
+									<div class="project-name">D1 Packaging</div>
+								</div>
+							</div>
+
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 
