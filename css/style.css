@@ -141,9 +141,11 @@
 
 .bio-description{
 	width: 50vw;
-	min-width: 400px;
+	min-width: 380px;
 	max-wdith: 95vw;
 	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .contact-title{
