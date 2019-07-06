@@ -476,11 +476,10 @@ html {
 }
 
 .modal-content {
-	margin: auto;
 	display: block;
-	max-width: 90vw;
-	height: auto;
-	max-height: 80vh;
+	width: auto;
+	max-height: 81vh;
+	max-width: 95vw;
 }
 
 #caption {
