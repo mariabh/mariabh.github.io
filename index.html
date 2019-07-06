@@ -7,6 +7,7 @@
 <!--		<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">-->
 		<script src="https://kit.fontawesome.com/e61a606f5b.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="jquery-3.4.1.min.js"></script>
 	</head>
 	<div id="wrapper">
 		<div class="filler blue-bg">
@@ -38,25 +39,54 @@
 		</div>
 		
 		<div class="photo-section" id="home-artsy">
-			<img src="./img/homepagephotos/ale.JPG" alt="bycicle">
-			<img src="./img/homepagephotos/beach.JPG" alt="playa">
-			<img src="./img/homepagephotos/blackandwhitebc.JPG" alt="museum">
-			<img src="./img/homepagephotos/boatlake.JPG" alt="garda">
-			<img src="./img/homepagephotos/churchparma.JPG" alt="church">
-			<img src="./img/homepagephotos/citycentermi.JPG" alt="milanocenter">
-			<img src="./img/homepagephotos/duomonight.JPG" alt="lightduomo">
-			<img src="./img/homepagephotos/fountainnight.JPG" alt="faveplace">
-			<img src="./img/homepagephotos/janay.JPG" alt="pinkrest">
-			<img src="./img/homepagephotos/london.JPG" alt="bandw">
-			<img src="./img/homepagephotos/lago.JPG" alt="mountains">
-			<img src="./img/homepagephotos/monikaK.JPG" alt="boatride">
-			<img src="./img/homepagephotos/nyyo.JPG" alt="nybridge">
-			<img src="./img/homepagephotos/yoroa.JPG" alt="sunseandme">
-			<img src="./img/homepagephotos/yellobackground.JPG" alt="portugalwall">
-			<img src="./img/homepagephotos/roamy.jpg" alt="swing">
-			<img src="./img/homepagephotos/stairs.JPG" alt="fondazione">
+			<img class="front-img" src="./img/homepagephotos/ale.JPG" alt="bycicle">
+			<img class="front-img" src="./img/homepagephotos/beach.JPG" alt="playa">
+			<img class="front-img" src="./img/homepagephotos/blackandwhitebc.JPG" alt="museum">
+			<img class="front-img" src="./img/homepagephotos/boatlake.JPG" alt="garda">
+			<img class="front-img" src="./img/homepagephotos/churchparma.JPG" alt="church">
+			<img class="front-img" src="./img/homepagephotos/citycentermi.JPG" alt="milanocenter">
+			<img class="front-img" src="./img/homepagephotos/duomonight.JPG" alt="lightduomo">
+			<img class="front-img" src="./img/homepagephotos/fountainnight.JPG" alt="faveplace">
+			<img class="front-img" src="./img/homepagephotos/janay.JPG" alt="pinkrest">
+			<img class="front-img" src="./img/homepagephotos/london.JPG" alt="bandw">
+			<img class="front-img" src="./img/homepagephotos/lago.JPG" alt="mountains">
+			<img class="front-img" src="./img/homepagephotos/monikaK.JPG" alt="boatride">
+			<img class="front-img" src="./img/homepagephotos/nyyo.JPG" alt="nybridge">
+			<img class="front-img" src="./img/homepagephotos/yoroa.JPG" alt="sunseandme">
+			<img class="front-img" src="./img/homepagephotos/yellobackground.JPG" alt="portugalwall">
+			<img class="front-img" src="./img/homepagephotos/roamy.jpg" alt="swing">
+			<img class="front-img" src="./img/homepagephotos/stairs.JPG" alt="fondazione">
 		</div>
 		
+		<div id="full-screen-modal" class="modal">
+		  <span class="close">&times;</span>
+		  <img class="modal-content" id="full-screen-image" alt"full_screen_image">
+		  <div id="caption"></div>
+		</div>
+		
+		<script>
+			var modal = document.getElementById('full-screen-modal');
+			var images = document.getElementsByClassName('front-img');
+			var modalImg = document.getElementById("full-screen-image");
+			var captionText = document.getElementById("caption");
+
+			for (var i = 0; i < images.length; i++) {
+			  var img = images[i];
+			  img.onclick = function(evt) {
+				console.log(evt);
+				modal.style.display = "flex";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+			  }
+			}
+
+			var span = document.getElementsByClassName("close")[0];
+
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+		</script>
+
 		<div class="blue-bg pad-top">
 			<div class="blue-bg" style="text-align: center">
 				<div class="know-more pad-top"><p>Want to know more?</p></div>

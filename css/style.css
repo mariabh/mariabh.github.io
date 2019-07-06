@@ -354,6 +354,7 @@
 	max-width: 95%;
 	padding-left: 2px;
 	padding-right: 2px;
+	cursor: pointer;
 }
 
 .menu-list {
@@ -425,3 +426,72 @@
 	padding-top: 10px;
 }
 
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: calc(100vh - 100px);
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content:flex-start;
+	flex-direction: column;
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	max-width: 90vw;
+	height: auto;
+	max-height: 80vh;
+}
+
+#caption {
+	margin: auto;
+	display: block;
+	max-width: 700px;
+	text-align: center;
+	padding: 10px 0;
+	background-color: rgba(0, 0, 0, 0.0);
+	color: white;
+	height: 50px;
+}
+
+.modal-content, #caption {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from { transform: scale(0) }
+	to { transform: scale(1) }
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: white;
+	font-size: 40px;
+	font-weight: normal;
+	transition: 0.3s;
+	background-color: rgba(0, 0, 0, 0.0);
+}
+
+.close:hover,
+.close:focus {
+  color: lightslategray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
