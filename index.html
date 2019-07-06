@@ -12,7 +12,7 @@
 	<div id="wrapper">
 		<div class="filler blue-bg">
 			<ul class="navmenu blue-bg">
-				<li onclick="">
+				<li id="hover-item" onclick="">
 					<a class="fas fa-bars"></a>
 					<ul>
 						<li onclick="window.location.href='./index.html'">Home</li>
@@ -23,6 +23,17 @@
 				</li>
 			</ul>
 		</div>
+		
+		<script>
+			(function() {
+			  $("hover-item").on( 'touchstart', function() {
+				$(this).trigger('hover') ;
+			  } ).on('touchend', function() {
+				$(this).trigger('hover') ;
+			  } ) ;
+			})() ;
+		</script>
+
 		
 		<div class="cover-fill-page blue-bg">
 			<div class="center-text fade-in">

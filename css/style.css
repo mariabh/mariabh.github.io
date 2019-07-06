@@ -43,7 +43,7 @@ html {
     border:0px white solid;
     background-color: inherit;
 	color: inherit;
-	cursor: pointer
+	cursor: pointer;
 }
 .navmenu > li > a{
 	padding: 20px;
