@@ -180,7 +180,7 @@
 	text-align: center;
 	width: 100%;
 	height: auto;
-/*	padding: 10px;*/
+	padding: 10px;
 }
 
 .section ul{
@@ -203,9 +203,11 @@
 .project img{
 	display: block;
 	height: 50vh;
-	min-height: 200px;
-	max-height: 270px;
 	width: 50vh;
+	min-height: 220px;
+	max-height: 270px;
+	min-width: 220px;
+	max-width: 360px;
 	padding-left: 2px;
 	padding-right: 2px;
 	object-fit: contain;
@@ -220,8 +222,10 @@
 	left: 0;
 	right: 0;
 	height: 50vh;
-	min-height: 200px;
+	min-height: 220px;
 	max-height: 270px;
+	min-width: 220px;
+	max-width: 360px;
 	width: 50vh;  opacity: 0;
 	transition: .5s ease;
 	background-color: black;
