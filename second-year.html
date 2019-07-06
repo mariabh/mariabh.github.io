@@ -6,11 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 	<div id="wrapper">
 		<div class="filler white-bg">
+			<a class="logo" href="./index.html">MNBH</a>
 			<ul class="navmenu white-bg">
-				<li>
+				<li id="hover-item" onclick="">
 					<a class="fas fa-bars"></a>
 					<ul>
 						<li onclick="window.location.href='./index.html'">Home</li>
@@ -21,6 +23,16 @@
 				</li>
 			</ul>
 		</div>
+		<script>
+			(function() {
+			  $("hover-item").on( 'touchstart', function() {
+				$(this).trigger('hover') ;
+			  } ).on('touchend', function() {
+				$(this).trigger('hover') ;
+			  } ) ;
+			})() ;
+		</script>
+		
 		<div class="left-title fade-in white-bg">SECOND YEAR</div>
 		<div class="fade-in" style="display: block">
 			<div class="section white-bg">

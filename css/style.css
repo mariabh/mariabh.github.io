@@ -14,7 +14,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .filler{
 	width: 100%;
 	height: 56px;
@@ -29,6 +28,24 @@ html {
 	background-color: #EEEEEE;
 	color: #232ED1;
 }
+
+.logo{
+	float: left;
+	font-size: large;
+	font-weight: bold;
+	color: inherit;
+	background-color: inherit;
+	text-decoration: none;
+	margin: 16.6px;
+	padding: 0px;
+	transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.logo:hover {
+	transform: scale(1.15);
+}
+
 
 .navmenu{
     float:right;
@@ -332,7 +349,6 @@ html {
 	height: calc(100vh - 7.5vh - 56px);
 	width: 100%;
 	text-align: center;
-
 }
 
 .small-cover{
