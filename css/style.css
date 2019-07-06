@@ -10,6 +10,11 @@
 	border-width: 0px 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .filler{
 	width: 100%;
 	height: 56px;
@@ -320,6 +325,13 @@
 	height: 85vh;
 	width: 100%;
 	text-align: center;
+}
+
+.cover-fill-page{
+	height: calc(100vh - 7.5vh - 56px);
+	width: 100%;
+	text-align: center;
+
 }
 
 .small-cover{
