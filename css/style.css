@@ -227,18 +227,32 @@
 	min-width: 220px;
 	max-width: 360px;
 	width: 50vh;  opacity: 0;
-	transition: .5s ease;
-	background-color: black;
+/*	transition: .5s ease;*/
+/*	background-color: black;*/
 	padding-left: 2px;
 	padding-right: 2px;
+	background-color: rgba(0,0,0,0.0);
+	-webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+	border-radius: 6px;
+
 }
 
 .project:hover .project-overlay {
-  opacity: 0.6;
+	background-color: rgba(0,0,0,0.6);
+	opacity: 1;
+}
+
+.project:hover .project-name {
+	opacity: 1;
 }
 
 .project-name {
 	color: white;
+	background-color: rgba(0,0,0,0.0);
 	font-size: 20px;
 	position: absolute;
 	top: 50%;
@@ -247,8 +261,8 @@
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	text-align: center;
-	background-color: inherit;
-	color: white;
+	opacity: 0;
+	transition: .5s ease;
 }
 
 .year{
