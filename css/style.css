@@ -20,13 +20,13 @@ html {
 }
 
 .blue-bg{
-	background-color: #232ED1;
+	background-color: #807FF9;
 	color: #EEEEEE;
 }
 
 .white-bg{
 	background-color: #EEEEEE;
-	color: #232ED1;
+	color: #807FF9;
 }
 
 .logo{
@@ -332,7 +332,7 @@ html {
 .iphones{
 	width: 100%;
 	height: auto;
-	background-color: #232ED1;
+	background-color: #807FF9;
 	text-align: center;
 }
 
@@ -418,7 +418,7 @@ html {
 }
 
 .menu-list li a:hover {
-	background-color: #1721B6;
+	background-color: #6C6BF8;
 	cursor:pointer;
 }
 
